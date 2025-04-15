@@ -86,6 +86,10 @@
 //! Chemistry prefer to use the expression reference interval rather than reference
 //! range.
 //!
-mod reference_interval;
-mod reference_interval_with_sample;
-mod mean;
+pub mod reference_interval;
+pub mod reference_interval_with_sample;
+pub mod mean;
+
+#[allow(unused_imports)] use reference_interval::ReferenceInterval;
+#[allow(unused_imports)] use reference_interval_with_sample::ReferenceIntervalWithSample;
+#[allow(unused_imports)] use mean::mean;
