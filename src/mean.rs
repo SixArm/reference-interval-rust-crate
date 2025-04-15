@@ -37,7 +37,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_mean() {
+    fn test() {
         let x = mean(11.0, 97.0);
         assert_eq!(x as i32, 54);
     }

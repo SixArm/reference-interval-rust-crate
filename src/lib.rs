@@ -2,12 +2,14 @@
 //!
 //! This create provides several ways to help with a reference interval:
 //!
-//! * `ReferenceInterval` - A simple struct to hold a reference interval with a units label.
+//! * `ReferenceInterval` - A struct for a reference interval lower value and upper value.
 //!
-//! * `ReferenceIntervalWithSample` - A struct that decorates a `ReferenceInterval` with a random sample function.
+//! * `mean` - Calculate the mean of a reference interval.
 //!
-//! * `mean` - A helper function to calculate the mean of a reference interval.
-//!
+//! * `standard_deviation` - Calculate the standard deviation of a reference interval.
+//! 
+//! * `normal` - Calculate the normal distribution of a reference interval.
+//! 
 //! Wikipedia has an introduction to the concept of a reference interval, which we've excerpted and edited below.
 //!
 //! * <https://en.wikipedia.org/wiki/Reference_interval>
@@ -87,9 +89,11 @@
 //! range.
 //!
 pub mod reference_interval;
-pub mod reference_interval_with_sample;
 pub mod mean;
+pub mod standard_deviation;
+pub mod normal;
 
-#[allow(unused_imports)] use reference_interval::ReferenceInterval;
-#[allow(unused_imports)] use reference_interval_with_sample::ReferenceIntervalWithSample;
-#[allow(unused_imports)] use mean::mean;
+#[allow(unused_imports)] pub use reference_interval::ReferenceInterval;
+#[allow(unused_imports)] pub use mean::mean;
+#[allow(unused_imports)] pub use standard_deviation::standard_deviation;
+#[allow(unused_imports)] pub use normal::normal;
