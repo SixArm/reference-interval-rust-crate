@@ -1,4 +1,5 @@
 /// Reference interval with a units label, lower reference limit, upper reference limite.
+#[derive(serde::Serialize)]
 pub struct ReferenceInterval<T> {
 
     /// Units label
