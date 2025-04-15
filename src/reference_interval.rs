@@ -1,8 +1,9 @@
 use serde::Serialize;
+use std::fmt::Display;
 
 /// Reference interval with a units label, lower reference limit, upper reference limite.
 #[derive(Debug, Serialize)]
-pub struct ReferenceInterval<T: PartialOrd> {
+pub struct ReferenceInterval<T: PartialOrd + Display> {
 
     /// Lower Reference Limit (LRL)
     #[allow(dead_code)]
