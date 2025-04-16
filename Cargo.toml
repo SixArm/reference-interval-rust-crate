@@ -1,6 +1,6 @@
 [package]
 name = "reference-interval"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2024"
 authors = ["Joel Parker Henderson <joel@joelparkerhenderson.com>"]
 description = "reference-interval: Rust crate of reference interval helpers a.k.a. reference range helpers."
